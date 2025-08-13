@@ -3,7 +3,7 @@
 
 DRV_SRC = .
 CANOPEN_SRC = CANopenNode
-APPL_SRC = CANopenNode/example
+APPL_SRC = lemonbee_od
 
 
 LINK_TARGET = canopend
@@ -49,7 +49,7 @@ CC ?= gcc
 OPT =
 OPT += -g
 #OPT += -O2
-OPT += -DCO_SINGLE_THREAD
+#OPT += -DCO_SINGLE_THREAD
 #OPT += -DCO_CONFIG_DEBUG=0xFFFF
 #OPT += -Wextra -Wshadow -pedantic -fanalyzer
 #OPT += -DCO_USE_GLOBALS
