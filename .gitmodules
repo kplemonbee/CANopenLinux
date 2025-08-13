@@ -1,3 +1,6 @@
 [submodule "CANopenNode"]
 	path = CANopenNode
 	url = https://github.com/CANopenNode/CANopenNode.git
+[submodule "lemonbee_od"]
+	path = lemonbee_od
+	url = git@github.com:kplemonbee/lemonbee_od.git
