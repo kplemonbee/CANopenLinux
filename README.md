@@ -25,6 +25,18 @@ Update the project:
     git pull # or: git fetch; inspect the changes (gitk); git merge
     git submodule update
 
+Getting and updating the project for lemonbee_od
+------------------------------------------------
+Clone the project from git repository and get submodules:
+
+    git clone git@github.com:kplemonbee/CANopenLinux.git -b lemonbee_od --recursive
+
+Alternatively, to manually initalize the submodules after clone:
+
+    git clone git@github.com:kplemonbee/CANopenLinux.git -b lemonbee_od
+    cd CANopenLinux
+    git submodule update --init --recursive
+    
 
 Usage
 -----
