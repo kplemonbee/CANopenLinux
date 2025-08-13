@@ -4,6 +4,7 @@
 DRV_SRC = .
 CANOPEN_SRC = CANopenNode
 APPL_SRC = lemonbee_od
+APPL_DRV_SRC = linux
 
 
 LINK_TARGET = canopend
@@ -11,6 +12,7 @@ LINK_TARGET = canopend
 
 INCLUDE_DIRS = \
 	-I$(DRV_SRC) \
+	-I$(APPL_DRV_SRC) \
 	-I$(CANOPEN_SRC) \
 	-I$(APPL_SRC)
 
@@ -41,8 +43,11 @@ SOURCES = \
 	$(CANOPEN_SRC)/extra/CO_trace.c \
 	$(CANOPEN_SRC)/CANopen.c \
 	$(APPL_SRC)/OD.c \
-	$(DRV_SRC)/CO_main_basic.c
-
+	$(DRV_SRC)/CO_application.c \
+	$(DRV_SRC)/domainDemo.c \
+	$(DRV_SRC)/CO_identificators.c \
+	$(DRV_SRC)/objectAccessOD.c \
+	$(DRV_SRC)/CO_main_basic.c 
 
 OBJS = $(SOURCES:%.c=%.o)
 CC ?= gcc

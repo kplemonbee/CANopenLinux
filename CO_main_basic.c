@@ -38,6 +38,7 @@
 #include "CO_epoll_interface.h"
 #include "CO_storageLinux.h"
 
+//#define CO_USE_APPLICATION
 /* Include optional external application functions */
 #ifdef CO_USE_APPLICATION
 #include "CO_application.h"
